@@ -17,24 +17,18 @@ Branch Tracking
 
 
 Git and GitHub on Ubuntu 
-	-https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-git-clone-on-Ubuntu-with-GitLab-and-GitHub
-
-	For cloneing repos use the link below to connect to account with SSH 
-	-https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls
-	*Better Link: https://medium.com/featurepreneur/setting-up-ssh-key-with-github-for-ubuntu-cd8f2fabf25b
-	-Secure Passphase 0147
-	
-	* Might need to do folow this link if authentican failed 
-	https://ginnyfahs.medium.com/github-error-authentication-failed-from-command-line-3a545bfd0ca8
-	
-	https://www.csestack.org/git-github-ubuntu-install-configure/
 	- Git Install
 	- $ sudo add-apt-repository ppa:git-core/ppa
 	- $ sudo apt update
 	- $ sudo apt install git
 	- Git Passowrd Setup
 	- $ git config --global credential.helper store
+	- When you commit it might fail and you need to follow this 
+		- https://ginnyfahs.medium.com/github-error-authentication-failed-from-command-line-3a545bfd0ca8
 	
+	- Helpfull Link Once Installed for Most Relevent git commands 
+		- https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-git-clone-on-Ubuntu-with-GitLab-and-GitHub
+
 	
 - sudo apt install python-is-python3		installing python 3 for autojump navigation
 
