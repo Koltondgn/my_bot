@@ -1,0 +1,60 @@
+Github Notes 
+Kolton Lee
+Created 	1/17/2023
+Last Updated 	1/17/2023
+
+
+# MAIN REPO
+https://github.com/xlzuvekas/LMxDU-Robotic-Material-Delivery.git
+
+# CD
+~/Documents/GitHub/LM/LMxDU-Robotic-Material-Delivery
+
+
+Branch Tracking 
+    git branch --set-upstream-to=origin/<branch> develop
+	May need to change if I dont want develop
+
+
+Git and GitHub on Ubuntu 
+	-https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-git-clone-on-Ubuntu-with-GitLab-and-GitHub
+
+	For cloneing repos use the link below to connect to account with SSH 
+	-https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls
+	*Better Link: https://medium.com/featurepreneur/setting-up-ssh-key-with-github-for-ubuntu-cd8f2fabf25b
+	-Secure Passphase 0147
+	
+	* Might need to do folow this link if authentican failed 
+	https://ginnyfahs.medium.com/github-error-authentication-failed-from-command-line-3a545bfd0ca8
+	
+- sudo apt install python-is-python3		installing python 3 for autojump navigation
+
+
+	
+	
+	One time auth refresh code 4372-1A6F
+	
+* gh auth setup-git 		KEY IN GETTING AUTH TO WORK
+- gh auth status 		Test Auth Git
+
+
+
+__-_____
+Look into git tracking of the script
+
+
+Terminal Commands
+	- cd file_name 		change directory
+	- cd .. 		go back one directory
+	- git checkout branch_name	change branch_name  
+	- git branch -a		Dispalys all branches local and remote
+	- git commit -m "Commit Message"	Comitting 
+	- git remote show origin		Shows origin and branches
+	- git remote update 			Updates entier list of branches 
+	- git pull https://github.com/xlzuvekas/LMxDU-Robotic-Material-Delivery.git branch_name
+	- git add file			Adds file to staiging for commit 
+		- git add --all
+	- git status 	check status of what has been pushed
+	- git push 	will push to whatever branch you are in
+	
+
