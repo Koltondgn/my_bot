@@ -28,6 +28,9 @@ Terminator
 Xacro 
 - Install   :~$ sudo apt install ros-humble-xacro
 
+Joint State Publisher 
+- Install   :~$ sudo apt install ros-<your_ros_version>-joint-state-publisher-gui
+
 Comand Line Interface 
 - Link:	https://github.com/ros2/ros2cli
 - Command Help  	:~$ ros2 node -h
