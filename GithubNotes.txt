@@ -31,6 +31,9 @@ Git and GitHub on Ubuntu
 
 	
 - sudo apt install python-is-python3		installing python 3 for autojump navigation
+	- https://ubunlog.com/en/como-instalar-y-utilizar-autojump-para-acelerar-el-movimiento-entre-directorios/
+	- autojump location for shortcut 
+	- then can use j filename directly
 
 
 	
