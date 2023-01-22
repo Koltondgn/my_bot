@@ -30,13 +30,16 @@ Git and GitHub on Ubuntu
 		- https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-git-clone-on-Ubuntu-with-GitLab-and-GitHub
 
 	
-- sudo apt install python-is-python3		installing python 3 for autojump navigation
+- $ sudo apt install python-is-python3		installing python 3 for autojump navigation
 	- https://ubunlog.com/en/como-instalar-y-utilizar-autojump-para-acelerar-el-movimiento-entre-directorios/
 	- autojump location for shortcut 
 	- then can use j filename directly
 
-
-	
+Bashrc File 
+	- Edit
+		- $ nano ~/.bashrc
+	- Check 
+		- $ source /.bashrc
 	
 	One time auth refresh code 4372-1A6F
 	
