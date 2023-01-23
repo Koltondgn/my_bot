@@ -34,13 +34,13 @@
     <joint name="chasis_joint" type="fixed">
         <parent link="base_link"/>
         <child link="chassis"/>
-        <origin xyz="-1.5 0 0"/>
+        <origin xyz="-1.5 0 0.5"/>
     </joint>
     <link name="chassis">
         <visual>
             <origin xyz="1.5 0 0.5"/>
             <geometry>
-                <box size="3 2 1"/>
+                <box size="3 1.25 1"/>
             </geometry>
             <material name="white"/>
         </visual>
@@ -61,7 +61,7 @@
     <joint name="left_wheel_rear_joint" type="continuous">
         <parent link="base_link"/>
         <child link="left_wheel_rear"/>
-        <origin xyz="-1 0.75 0" rpy="-${pi/2} 0 0"/>
+        <origin xyz="-1 0.75 0.5" rpy="-${pi/2} 0 0"/>
         <axis xyz="0 0 1"/>
     </joint>
     <link name="left_wheel_rear">
@@ -86,7 +86,7 @@
     <joint name="right_wheel_rear_joint" type="continuous">
         <parent link="base_link"/>
         <child link="right_wheel_rear"/>
-        <origin xyz="-1 -0.75 0" rpy="${pi/2} 0 0"/>
+        <origin xyz="-1 -0.75 0.5" rpy="${pi/2} 0 0"/>
         <axis xyz="0 0 -1"/>
     </joint>
     <link name="right_wheel_rear">
@@ -111,7 +111,7 @@
     <joint name="right_wheel_front_steer_joint" type="continuous">
         <parent link="base_link"/>
         <child link="right_wheel_front_steer"/>
-        <origin xyz="1 -0.75 0.5"/>
+        <origin xyz="1 -0.75 1"/>
         <axis xyz="0 0 -1"/>
     </joint>
     <link name="right_wheel_front_steer">
@@ -159,7 +159,7 @@
  <joint name="left_wheel_front_steer_joint" type="continuous">
         <parent link="base_link"/>
         <child link="left_wheel_front_steer"/>
-        <origin xyz="1 0.75 0.5"/>
+        <origin xyz="1 0.75 1"/>
         <axis xyz="0 0 -1"/>
     </joint>
     <link name="left_wheel_front_steer">

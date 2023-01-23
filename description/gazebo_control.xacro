@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="robot">
+
+    <gazebo>
+        <plugin name="diff_drgazebogazebo_ros_control" filename="libgazebo_ros_control.so">
+
+            <!-- Wheel Information -->
+            <robotNamesapce>/</robotNamesapce>
+            <robotSimType>steer_bot_hardware_gazebo/SteerBotHardwareGazebo</robotSimType>
+
+            <left_wheel_rear_joint>left_wheel_rear_joint</left_wheel_rear_joint>
+            <right_wheel_rear_joint>right_wheel_rear_joint</right_wheel_rear_joint>
+
+        </plugin>
+    </gazebo>
+</robot>
