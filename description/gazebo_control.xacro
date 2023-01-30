@@ -1,16 +1,38 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="robot">
 
+
+
+    <xacro:property name="wheel_friction" value="1"/>
+
+    <gazebo reference="front_left_wheel">
+        <mu1>${wheel_friction}</mu1>
+        <mu2>${wheel_friction}</mu2>
+        <material>Gazebo/DarkGrey</material>
+    </gazebo>
+    <gazebo reference="front_right_wheel">
+        <mu1>${wheel_friction}</mu1>
+        <mu2>${wheel_friction}</mu2>
+        <material>Gazebo/DarkGrey</material>
+    </gazebo>
+    <gazebo reference="back_left_wheel">
+        <mu1>${wheel_friction}</mu1>
+        <mu2>${wheel_friction}</mu2>
+        <material>Gazebo/DarkGrey</material>
+    </gazebo>
+    <gazebo reference="back_right_wheel">
+        <mu1>${wheel_friction}</mu1>
+        <mu2>${wheel_friction}</mu2>
+        <material>Gazebo/DarkGrey</material>
+    </gazebo>
+
+    <gazebo reference="odom">
+        <dampingFactor>0.00007</dampingFactor>
+    </gazebo>
+
     <gazebo>
-        <plugin name="diff_drgazebogazebo_ros_control" filename="libgazebo_ros_control.so">
-
-            <!-- Wheel Information -->
-            <robotNamesapce>/</robotNamesapce>
-            <robotSimType>steer_bot_hardware_gazebo/SteerBotHardwareGazebo</robotSimType>
-
-            <left_wheel_rear_joint>left_wheel_rear_joint</left_wheel_rear_joint>
-            <right_wheel_rear_joint>right_wheel_rear_joint</right_wheel_rear_joint>
-
+        <plugin name="car_gazebo_plugin" filename="libcar_gazebo_plugin.so">
         </plugin>
     </gazebo>
+
 </robot>

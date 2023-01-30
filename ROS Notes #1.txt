@@ -45,3 +45,29 @@ Notes
 - Python Package:  	package.xml, Setup.py, setup.cfW
 - Workspace: Contains Packages, installation workspace, and possible local 
 
+
+Topic List
+~$ ros2 topic list (view list)
+~$ ros2 topic list /name (view data under topic)
+
+
+
+Node List 
+~$ ros2 node list
+~$ ros2 node info /name
+
+Service List 
+~$ ros2 service list
+
+## My bot 
+
+Luanching Gazebo with Bot
+	~$ cd dev_ws/
+	~$ source install/setup.bash (First time source /opt/ros/humble/setup.bash)
+	~$ colcon build --symlink-install
+	- Keyboard control
+	~$ ros2 run teleop_twist_keyboard teleop_twist_keyboard 
+	~$ rviz2 -d src/my_bot/config/drive_bot.rviz 
+
+
+

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="robot">
+
+    <joint name="laser_joint" type="fixed">
+        <parent link="chassis"/>
+        <child link="laser_frame"/>
+        <origin xyz="0.1 0 0175" rpy="0 0 0"/>
+
+    </joint>
+
+    <link name="laser_frame">
+
+
+    </link>
+
+</robot>
